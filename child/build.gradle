@@ -1,0 +1,8 @@
+task show {
+    doLast{
+        println 'srcDirName: ' + srcDirName
+
+        File srcDir = getSrcDir(project)
+        println 'srcDir: ' + rootProject.relativePath(srcDir)
+    }
+}
